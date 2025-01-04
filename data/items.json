@@ -1,0 +1,7 @@
+[
+	{
+		"name": "Apple",
+		"unique_name": "item:test",
+		"resource": "res://resources/items/apple.tres"
+	}
+]

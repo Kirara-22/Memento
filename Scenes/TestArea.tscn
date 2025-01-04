@@ -1,0 +1,268 @@
+[gd_scene load_steps=37 format=4 uid="uid://cwuokpjg3q21s"]
+
+[ext_resource type="Material" uid="uid://00klyclfoq2s" path="res://resources/shaders/smooth-filtering.tres" id="1_2wwem"]
+[ext_resource type="Script" path="res://Scripts/Quests/TestArea.cs" id="1_5ueqw"]
+[ext_resource type="TileSet" uid="uid://bcvije43w8ygj" path="res://resources/tilesets/city.tres" id="2_0d65y"]
+[ext_resource type="Script" path="res://Scripts/Components/SmoothTileMapLayer.cs" id="3_ush2q"]
+[ext_resource type="Script" path="res://Scripts/Components/Area/ContinuousDamageHitBox.cs" id="4_eh38v"]
+[ext_resource type="PackedScene" uid="uid://d1gnxumr8r1hu" path="res://Scenes/Entities/Enemy/Common/Samurai.tscn" id="4_ff3sm"]
+[ext_resource type="PackedScene" uid="uid://c756ga8nth1ks" path="res://Scenes/Components/Managers/StatsManager.tscn" id="5_4mm67"]
+[ext_resource type="PackedScene" uid="uid://bwreypn7kqmpw" path="res://Scenes/Entities/Player.tscn" id="5_dhbyu"]
+[ext_resource type="PackedScene" uid="uid://bx3whdhahfxx8" path="res://assets/entities/Npc.tscn" id="6_6asky"]
+[ext_resource type="Script" path="res://Scripts/Components/Area/QuestTrigger.cs" id="6_jhv87"]
+[ext_resource type="Script" path="res://Scripts/Resources/Stats.cs" id="6_y471r"]
+[ext_resource type="PackedScene" uid="uid://ceex4qw6g8cph" path="res://Scenes/Quest/SlayTest.tscn" id="7_0lxe1"]
+[ext_resource type="Resource" uid="uid://cxd7fxbcaj6xb" path="res://resources/dialogues/Chapter1.dialogue" id="7_uaett"]
+[ext_resource type="PackedScene" uid="uid://bkgjauxklnmyv" path="res://Scenes/Quest/QuestGui.tscn" id="8_5fhi4"]
+[ext_resource type="Script" path="res://Scripts/Components/Area/DestinationArea.cs" id="8_tkndw"]
+[ext_resource type="PackedScene" uid="uid://cu4fpa8blkef8" path="res://Scenes/Components/Interactable/Item.tscn" id="12_lbij3"]
+[ext_resource type="Texture2D" uid="uid://do13qbc0j6yrd" path="res://assets/inventory/items/temp/Item5.png" id="13_eyarq"]
+[ext_resource type="PackedScene" uid="uid://b328i2sbpwivv" path="res://Scenes/Quest/testQuest/10Apples.tscn" id="13_m1a1h"]
+[ext_resource type="Script" path="res://Scripts/Resources/Item.cs" id="14_ov4of"]
+[ext_resource type="PackedScene" uid="uid://d2vmxefe8srsv" path="res://Scenes/Quest/testQuest/Defense.tscn" id="15_n6h3e"]
+[ext_resource type="PackedScene" uid="uid://dch6xdswnc43g" path="res://Scenes/Quest/InteractWithNpc.tscn" id="17_dt2h7"]
+[ext_resource type="PackedScene" uid="uid://2atebgrg3iic" path="res://Scenes/Quest/testQuest/Escort.tscn" id="19_3ru6h"]
+[ext_resource type="PackedScene" uid="uid://dp6suhjwm3mm5" path="res://Scenes/Entities/Escort.tscn" id="20_lq608"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bk0g"]
+size = Vector2(127.5, 141.5)
+
+[sub_resource type="Resource" id="Resource_lyd12"]
+script = ExtResource("6_y471r")
+MaxHealth = 100.0
+MaxMana = 100.0
+Attack = 10.0
+Magic = 10.0
+Defense = 10.0
+Speed = 50.0
+PhysicalDamageMultiplier = 1.0
+MagicalDamageMultiplier = 1.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tuypo"]
+size = Vector2(214, 20)
+
+[sub_resource type="Resource" id="Resource_nlc82"]
+resource_local_to_scene = true
+script = ExtResource("14_ov4of")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 1
+Value = 1
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("13_eyarq")
+Sprite = ExtResource("13_eyarq")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_3i586"]
+script = ExtResource("6_y471r")
+MaxHealth = 100.0
+MaxMana = 100.0
+Attack = 10.0
+Magic = 10.0
+Defense = 10.0
+Speed = 50.0
+PhysicalDamageMultiplier = 1.0
+MagicalDamageMultiplier = 1.0
+
+[sub_resource type="Resource" id="Resource_f4tg4"]
+resource_local_to_scene = true
+script = ExtResource("14_ov4of")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 1
+Value = 1
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("13_eyarq")
+Sprite = ExtResource("13_eyarq")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_4et5r"]
+resource_local_to_scene = true
+script = ExtResource("14_ov4of")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 1
+Value = 1
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("13_eyarq")
+Sprite = ExtResource("13_eyarq")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_swk20"]
+resource_local_to_scene = true
+script = ExtResource("14_ov4of")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 1
+Value = 1
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("13_eyarq")
+Sprite = ExtResource("13_eyarq")
+Stackable = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrm0u"]
+size = Vector2(8.43156, 26.5766)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_75ve7"]
+size = Vector2(51.571, 114.834)
+
+[sub_resource type="Resource" id="Resource_qm8ow"]
+resource_local_to_scene = true
+script = ExtResource("14_ov4of")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 1
+Value = 1
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("13_eyarq")
+Sprite = ExtResource("13_eyarq")
+Stackable = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o43ct"]
+size = Vector2(214, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1se2"]
+size = Vector2(20, 327.326)
+
+[node name="Test Area" type="Node2D"]
+script = ExtResource("1_5ueqw")
+
+[node name="SmoothTileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 2
+material = ExtResource("1_2wwem")
+position = Vector2(0, -2)
+tile_map_data = PackedByteArray("AAAAAAAAAgABAAEAAAABAAAAAgABAAEAAAACAAAAAgABAAEAAAADAAAAAgABAAEAAAAEAAEAAgABAAEAAAAFAAEAAgABAAEAAAAGAAEAAgABAAEAAAAHAAEAAgABAAEAAAAAAAEAAgABAAEAAAABAAEAAgABAAEAAAACAAEAAgABAAEAAAADAAEAAgABAAEAAAAIAAEAAgABAAEAAAAEAAAAAgABAAEAAAAFAAAAAgABAAEAAAAGAAAAAgABAAEAAAAHAAAAAgABAAEAAAAIAAAAAgABAAEAAAAJAAAAAgABAAEAAAAKAAAAAgABAAEAAAAKAAEAAgABAAEAAAALAAEAAgADAAEAAAAMAAEAAgABAAEAAAAMAAAAAgABAAEAAAALAAAAAgABAAEAAAAAAPv/AgABAAEAAAAAAPz/AgABAAEAAAAAAP3/AgABAAEAAAAAAP7/AgABAAEAAAAAAP//AgABAAEAAAAAAAIAAgABAAEAAAAAAAMAAgABAAEAAAAAAAQAAgABAAEAAAAAAAUAAgABAAEAAAABAAcAAgABAAMAAAACAAcAAgABAAMAAAADAAcAAgABAAMAAAAEAAcAAgABAAMAAAAFAAcAAgABAAMAAAAGAAcAAgABAAMAAAAHAAcAAgABAAMAAAAIAAcAAgABAAMAAAAJAAcAAgABAAMAAAAKAAcAAgACAAMAAAABAPv/AgABAAEAAAACAPv/AgABAAEAAAADAPv/AgABAAEAAAAEAPv/AgABAAEAAAAFAPv/AgABAAEAAAAGAPv/AgABAAEAAAAIAPz/AgABAAEAAAAJAPz/AgABAAEAAAAKAPz/AgABAAEAAAALAPz/AgABAAEAAAAMAPz/AgABAAEAAAANAPz/AgABAAEAAAAMAPv/AgABAAEAAAALAPv/AgABAAEAAAAKAPv/AgABAAEAAAANAPv/AgABAAEAAAANAP3/AgABAAEAAAANAP7/AgABAAEAAAANAP//AgABAAEAAAANAAAAAgABAAEAAAANAAEAAgABAAEAAAANAAIAAgABAAEAAAANAAMAAgABAAEAAAANAAQAAgABAAEAAAANAAUAAgABAAEAAAANAAYAAgABAAEAAAANAAcAAgABAAEAAAAOAPv/AgABAAEAAAAPAPv/AgABAAEAAAAQAPv/AgABAAEAAAARAPv/AgABAAEAAAASAPv/AgABAAEAAAATAPv/AgABAAEAAAAUAPv/AgABAAEAAAAUAPz/AgABAAEAAAAUAP3/AgABAAEAAAAUAP7/AgABAAEAAAAUAP//AgABAAEAAAAUAAAAAgABAAEAAAAUAAEAAgABAAEAAAAUAAIAAgABAAEAAAAUAAMAAgABAAEAAAAUAAQAAgABAAEAAAAUAAUAAgABAAEAAAAUAAYAAgABAAEAAAAUAAcAAgABAAEAAAAUAAgAAgABAAEAAAAUAAkAAgABAAEAAAATAAkAAgABAAEAAAATAAoAAgABAAEAAAASAAkAAgABAAEAAAARAAkAAgABAAEAAAAQAAkAAgABAAEAAAAPAAkAAgABAAEAAAAOAAkAAgABAAEAAAANAAkAAgABAAEAAAAMAAkAAgABAAEAAAALAAkAAgABAAEAAAAKAAkAAgABAAEAAAAJAAkAAgABAAEAAAAIAAkAAgABAAEAAAAHAAkAAgABAAEAAAAGAAkAAgABAAEAAAAFAAkAAgABAAEAAAAEAAkAAgABAAEAAAADAAkAAgABAAEAAAACAAkAAgABAAEAAAABAAkAAgABAAEAAAAAAAoAAgABAAEAAAABAAoAAgABAAEAAAACAAoAAgABAAEAAAADAAoAAgABAAEAAAAEAAoAAgABAAEAAAAFAAoAAgABAAEAAAAGAAoAAgABAAEAAAAHAAoAAgABAAEAAAAIAAoAAgABAAEAAAAJAAoAAgABAAEAAAAKAAoAAgABAAEAAAALAAoAAgABAAEAAAAMAAoAAgABAAEAAAANAAoAAgABAAEAAAAOAAoAAgABAAEAAAAPAAoAAgABAAEAAAAQAAoAAgABAAEAAAARAAoAAgABAAEAAAAUAAoAAgABAAEAAAASAAoAAgABAAEAAAAAAAkAAgABAAEAAAABAAgAAgABAAEAAAACAAgAAgABAAEAAAADAAgAAgABAAEAAAAEAAgAAgABAAEAAAAFAAgAAgABAAEAAAAGAAgAAgABAAEAAAAHAAgAAgABAAEAAAAIAAgAAgABAAEAAAAJAAgAAgABAAEAAAAKAAgAAgABAAEAAAALAAgAAgABAAEAAAAMAAgAAgABAAEAAAANAAgAAgABAAEAAAAOAAgAAgABAAEAAAAPAAgAAgABAAEAAAAQAAgAAgABAAEAAAARAAgAAgABAAEAAAASAAgAAgABAAEAAAASAAMAAgABAAEAAAASAAIAAgABAAEAAAASAAEAAgABAAEAAAASAAAAAgABAAEAAAASAP//AgABAAEAAAASAP7/AgABAAEAAAASAP3/AgABAAEAAAASAPz/AgABAAEAAAARAPz/AgABAAEAAAAQAPz/AgABAAEAAAAPAPz/AgABAAEAAAAOAPz/AgABAAEAAAAOAP3/AgABAAEAAAAOAP7/AgABAAEAAAAOAP//AgABAAEAAAAOAAAAAgABAAEAAAAOAAEAAgABAAEAAAAOAAIAAgABAAEAAAAOAAMAAgABAAEAAAAOAAQAAgABAAEAAAAOAAUAAgABAAEAAAAOAAYAAgABAAEAAAAOAAcAAgABAAEAAAAPAAcAAgABAAEAAAAPAAYAAgABAAEAAAAPAAUAAgABAAEAAAAPAAQAAgABAAEAAAAPAAMAAgABAAEAAAAPAAIAAgABAAEAAAAPAAEAAgABAAEAAAAPAAAAAgABAAEAAAAPAP//AgABAAEAAAAPAP7/AgABAAEAAAAPAP3/AgABAAEAAAAQAP3/AgABAAEAAAAQAP7/AgABAAEAAAAQAP//AgABAAEAAAAQAAAAAgABAAEAAAAQAAEAAgABAAEAAAAQAAIAAgABAAEAAAAQAAMAAgABAAEAAAAQAAQAAgABAAEAAAAQAAUAAgABAAEAAAAQAAYAAgABAAEAAAAQAAcAAgABAAEAAAARAAcAAgABAAEAAAARAAYAAgABAAEAAAARAAUAAgABAAEAAAARAAQAAgABAAEAAAARAAMAAgABAAEAAAARAAIAAgABAAEAAAARAAEAAgABAAEAAAARAAAAAgABAAEAAAARAP//AgABAAEAAAARAP7/AgABAAEAAAARAP3/AgABAAEAAAASAAQAAgABAAEAAAASAAUAAgABAAEAAAASAAYAAgABAAEAAAASAAcAAgABAAEAAAATAAcAAgABAAEAAAATAAYAAgABAAEAAAATAAUAAgABAAEAAAATAAQAAgABAAEAAAATAAMAAgABAAEAAAATAAIAAgABAAEAAAATAAEAAgABAAEAAAATAAAAAgABAAEAAAATAP//AgABAAEAAAATAP7/AgABAAEAAAATAP3/AgABAAEAAAATAPz/AgABAAEAAAATAAgAAgABAAEAAAAFAAUAAgABAAEAAAAFAAQAAgABAAEAAAAFAAMAAgABAAEAAAAFAAIAAgABAAEAAAAEAAIAAgABAAEAAAADAAIAAgABAAEAAAACAAIAAgABAAEAAAABAAIAAgABAAEAAAABAAMAAgABAAEAAAABAAQAAgABAAEAAAABAAUAAgABAAEAAAABAAYAAgABAAEAAAACAAYAAgABAAEAAAACAAUAAgABAAEAAAACAAQAAgABAAEAAAACAAMAAgABAAEAAAADAAMAAgABAAEAAAADAAQAAgABAAEAAAADAAUAAgABAAEAAAADAAYAAgABAAEAAAAEAAYAAgABAAEAAAAEAAUAAgABAAEAAAAEAAQAAgABAAEAAAAEAAMAAgABAAEAAAAFAAYAAgABAAEAAAAGAAYAAgABAAEAAAAGAAUAAgABAAEAAAAGAAQAAgABAAEAAAAGAAMAAgABAAEAAAAGAAIAAgABAAEAAAAHAAIAAgABAAEAAAAHAAMAAgABAAEAAAAHAAQAAgABAAEAAAAHAAUAAgABAAEAAAAHAAYAAgABAAEAAAAIAAYAAgABAAEAAAAIAAUAAgABAAEAAAAIAAQAAgABAAEAAAAIAAMAAgABAAEAAAAIAAIAAgABAAEAAAAJAAIAAgABAAEAAAAJAAEAAgABAAEAAAAJAAMAAgABAAEAAAAJAAQAAgABAAEAAAAJAAUAAgABAAEAAAAJAAYAAgABAAEAAAAKAAYAAgABAAEAAAAKAAUAAgABAAEAAAAKAAQAAgABAAEAAAAKAAMAAgABAAEAAAAKAAIAAgABAAEAAAALAAIAAgADAAEAAAALAAMAAgADAAEAAAALAAQAAgADAAEAAAALAAUAAgADAAEAAAAMAAYAAgABAAEAAAAMAAUAAgABAAEAAAAMAAQAAgABAAEAAAAMAAMAAgABAAEAAAAMAAIAAgABAAEAAAAGAPz/AgABAAEAAAAFAPz/AgABAAEAAAAEAPz/AgABAAEAAAADAPz/AgABAAEAAAACAPz/AgABAAEAAAABAPz/AgABAAEAAAABAP3/AgABAAEAAAABAP7/AgABAAEAAAABAP//AgABAAEAAAACAP//AgABAAEAAAACAP3/AgABAAEAAAADAP3/AgABAAEAAAADAP7/AgABAAEAAAADAP//AgABAAEAAAAEAP//AgABAAEAAAAEAP7/AgABAAEAAAAEAP3/AgABAAEAAAAFAP3/AgABAAEAAAAFAP7/AgABAAEAAAAFAP//AgABAAEAAAAGAP//AgABAAEAAAAGAP7/AgABAAEAAAAGAP3/AgABAAEAAAAHAP3/AgABAAEAAAAHAPz/AgABAAEAAAAHAP7/AgABAAEAAAAHAP//AgABAAEAAAAIAP//AgABAAEAAAAIAP7/AgABAAEAAAAIAP3/AgABAAEAAAAJAP3/AgABAAEAAAAJAP7/AgABAAEAAAAJAP//AgABAAEAAAAKAP//AgABAAEAAAAKAP7/AgABAAEAAAAKAP3/AgABAAEAAAALAP3/AgABAAEAAAALAP7/AgABAAEAAAALAP//AgABAAEAAAAMAP//AgABAAEAAAAMAP7/AgABAAEAAAAMAP3/AgABAAEAAAD///v/AgADAAEAAAD///z/AgADAAEAAAD///3/AgADAAEAAAD///7/AgADAAEAAAD/////AgADAAEAAAD//wAAAgADAAEAAAD//wEAAgADAAEAAAD//wIAAgADAAEAAAD//wMAAgADAAEAAAD//wQAAgADAAEAAAD//wUAAgADAAEAAAD//wYAAgADAAEAAAD//wcAAgAAAAMAAAD//wgAAgADAAEAAAD//wkAAgADAAEAAAD//woAAgADAAEAAAAAAAYAAgABAAEAAAAAAAcAAgABAAMAAAAAAAgAAgABAAEAAAD//wsAAgAEAAMAAAAAAAsAAgABAAMAAAABAAsAAgABAAMAAAACAAsAAgABAAMAAAADAAsAAgABAAMAAAAEAAsAAgABAAMAAAAFAAsAAgABAAMAAAAGAAsAAgABAAMAAAAHAAsAAgABAAMAAAAIAAsAAgABAAMAAAAJAAsAAgABAAMAAAAKAAsAAgABAAMAAAALAAsAAgABAAMAAAAMAAsAAgABAAMAAAANAAsAAgABAAMAAAAOAAsAAgABAAMAAAAPAAsAAgABAAMAAAAQAAsAAgABAAMAAAARAAsAAgABAAMAAAASAAsAAgABAAMAAAATAAsAAgABAAMAAAAUAAsAAgABAAMAAAAVAAsAAgAHAAMAAAAVAAoAAgADAAEAAAAVAAkAAgADAAEAAAAVAAgAAgADAAEAAAAVAAcAAgADAAEAAAAVAAYAAgADAAEAAAAVAAUAAgADAAEAAAAVAAQAAgADAAEAAAAVAAMAAgADAAEAAAAVAAIAAgADAAEAAAAVAAEAAgADAAEAAAAVAAAAAgADAAEAAAAVAP//AgADAAEAAAAVAP3/AgADAAEAAAAVAPz/AgADAAEAAAAVAPv/AgADAAEAAAD///r/AgAEAAAAAAAAAPr/AgABAAMAAAABAPr/AgABAAMAAAACAPr/AgABAAMAAAADAPr/AgABAAMAAAAEAPr/AgABAAMAAAAFAPr/AgABAAMAAAAIAPr/AgABAAMAAAAJAPr/AgABAAMAAAAKAPr/AgABAAMAAAALAPr/AgABAAMAAAAMAPr/AgABAAMAAAANAPr/AgABAAMAAAAOAPr/AgABAAMAAAAPAPr/AgABAAMAAAAQAPr/AgABAAMAAAARAPr/AgABAAMAAAASAPr/AgABAAMAAAATAPr/AgABAAMAAAAUAPr/AgABAAMAAAAVAPr/AgAHAAAAAAAGAPr/AgABAAMAAAAHAPr/AgABAAMAAAACAP7/AgABAAEAAAALAAcAAgADAAMAAAAMAAcAAgABAAEAAAAVAP7/AgADAAEAAAAHAPv/AgABAAEAAAAIAPv/AgABAAEAAAAJAPv/AgABAAEAAAALAAYAAgADAAEAAAA=")
+tile_set = ExtResource("2_0d65y")
+script = ExtResource("3_ush2q")
+
+[node name="ContinuousDamageHitBox" type="Area2D" parent="." node_paths=PackedStringArray("StatsManager")]
+z_index = 1
+position = Vector2(483, 451)
+collision_layer = 1024
+collision_mask = 2048
+script = ExtResource("4_eh38v")
+damageInterval = 0.1
+StatsManager = NodePath("StatsManager")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContinuousDamageHitBox"]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_6bk0g")
+debug_color = Color(0.684873, 0.308652, 0.977388, 0.42)
+
+[node name="StatsManager" parent="ContinuousDamageHitBox" instance=ExtResource("5_4mm67")]
+Stats = SubResource("Resource_lyd12")
+
+[node name="finish" type="Area2D" parent="." node_paths=PackedStringArray("Quest") groups=["area"]]
+position = Vector2(116, 310)
+scale = Vector2(-1.78947, -4.42145)
+collision_layer = 5
+collision_mask = 5
+script = ExtResource("8_tkndw")
+Quest = NodePath("../QuestTrigger4/Escort")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="finish"]
+shape = SubResource("RectangleShape2D_tuypo")
+
+[node name="Samurai" parent="." instance=ExtResource("4_ff3sm")]
+position = Vector2(707, 342)
+
+[node name="Tower" parent="." node_paths=PackedStringArray("Quest") groups=["NPC"] instance=ExtResource("6_6asky")]
+position = Vector2(33, 447)
+DialogResource = ExtResource("7_uaett")
+Quest = NodePath("Quest")
+
+[node name="SlayTest" parent="Tower" instance=ExtResource("7_0lxe1")]
+Gold = 11
+Experience = 10
+QuestItems = [SubResource("Resource_nlc82")]
+
+[node name="Quest" parent="Tower" instance=ExtResource("15_n6h3e")]
+
+[node name="StatsManager" parent="Tower" instance=ExtResource("5_4mm67")]
+Stats = SubResource("Resource_3i586")
+
+[node name="Item" parent="." instance=ExtResource("12_lbij3")]
+position = Vector2(60, 129)
+ItemResource = SubResource("Resource_f4tg4")
+
+[node name="Item2" parent="." instance=ExtResource("12_lbij3")]
+position = Vector2(175, 134)
+ItemResource = SubResource("Resource_4et5r")
+
+[node name="Item3" parent="." instance=ExtResource("12_lbij3")]
+position = Vector2(109, 125)
+ItemResource = SubResource("Resource_swk20")
+
+[node name="QuestTrigger" type="Area2D" parent="." node_paths=PackedStringArray("Quest")]
+position = Vector2(230, 438)
+scale = Vector2(-0.524191, 1.79333)
+collision_layer = 16
+collision_mask = 4
+script = ExtResource("6_jhv87")
+Quest = NodePath("../Tower/SlayTest")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="QuestTrigger"]
+rotation = -3.14159
+scale = Vector2(4.97766, -4.00658)
+shape = SubResource("RectangleShape2D_rrm0u")
+debug_color = Color(0.935299, 1.61719e-05, 0.636979, 0.42)
+
+[node name="QuestTrigger2" type="Area2D" parent="." node_paths=PackedStringArray("Quest")]
+position = Vector2(60, 349)
+scale = Vector2(2.03469, 0.11816)
+collision_layer = 16
+collision_mask = 4
+script = ExtResource("6_jhv87")
+Quest = NodePath("InteractWithNPC")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="QuestTrigger2"]
+scale = Vector2(0.736848, 0.992734)
+shape = SubResource("RectangleShape2D_75ve7")
+debug_color = Color(0.907471, 0.0001236, 0.739933, 0.42)
+
+[node name="InteractWithNPC" parent="QuestTrigger2" instance=ExtResource("17_dt2h7")]
+QuestItems = [SubResource("Resource_qm8ow")]
+
+[node name="QuestTrigger3" type="Area2D" parent="." node_paths=PackedStringArray("Quest")]
+collision_layer = 16
+collision_mask = 4
+script = ExtResource("6_jhv87")
+Quest = NodePath("10 Apples")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="QuestTrigger3"]
+position = Vector2(108, 193)
+shape = SubResource("RectangleShape2D_o43ct")
+
+[node name="10 Apples" parent="QuestTrigger3" instance=ExtResource("13_m1a1h")]
+
+[node name="QuestTrigger4" type="Area2D" parent="." node_paths=PackedStringArray("Quest")]
+position = Vector2(349, 487)
+scale = Vector2(0.734224, 0.50103)
+collision_layer = 16
+collision_mask = 4
+script = ExtResource("6_jhv87")
+Quest = NodePath("Escort")
+
+[node name="Escort" parent="QuestTrigger4" instance=ExtResource("19_3ru6h")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="QuestTrigger4"]
+position = Vector2(-1.36198, -55.8849)
+shape = SubResource("RectangleShape2D_t1se2")
+
+[node name="Player" parent="." instance=ExtResource("5_dhbyu")]
+position = Vector2(114, 468)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="Container" parent="Player" instance=ExtResource("8_5fhi4")]
+offset_left = -318.0
+offset_top = -177.0
+offset_right = 371.0
+offset_bottom = 182.0
+
+[node name="npc" parent="." node_paths=PackedStringArray("quest") groups=["NPC"] instance=ExtResource("20_lq608")]
+position = Vector2(60, 521)
+scale = Vector2(0.734224, 0.50103)
+disable_mode = 0
+quest = NodePath("../QuestTrigger4/Escort")
+UniqueName = "npc:escort"

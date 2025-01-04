@@ -1,0 +1,789 @@
+[gd_scene load_steps=54 format=3 uid="uid://dd1jerr3yxfmm"]
+
+[ext_resource type="PackedScene" uid="uid://svqrge4l63b4" path="res://Scenes/UI/Common/Slot.tscn" id="1_i0y0q"]
+[ext_resource type="Script" path="res://Scripts/UI/Crafting.cs" id="1_xer77"]
+[ext_resource type="Theme" uid="uid://cxgbxsavclkj7" path="res://resources/ui/theme.tres" id="2_xbes8"]
+[ext_resource type="Texture2D" uid="uid://bdl211kxne1dg" path="res://assets/ui/button.png" id="3_5klxs"]
+[ext_resource type="Texture2D" uid="uid://b8kxjlkscihn4" path="res://assets/ui/nine-patch.png" id="5_li2ry"]
+[ext_resource type="Script" path="res://Scripts/Resources/Item.cs" id="6_ehywe"]
+[ext_resource type="Texture2D" uid="uid://do13qbc0j6yrd" path="res://assets/inventory/items/temp/Item5.png" id="6_w3jy4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pp7ig"]
+atlas = ExtResource("3_5klxs")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_eivkp"]
+load_path = "res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbd0s"]
+atlas = SubResource("CompressedTexture2D_eivkp")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sfl0v"]
+load_path = "res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j15wf"]
+atlas = SubResource("CompressedTexture2D_sfl0v")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="Resource" id="Resource_4eku8"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_aah1g"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_uv0ek"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_lorp2"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_two30"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_pnrwh"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_f6xe3"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_dypkc"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_s6h2p"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_ydq74"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_f3m4h"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_3c7ah"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_j4np4"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_5odoy"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_bolfs"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_gwmkn"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_w30wr"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_35kul"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_n0k12"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_adb4j"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_vlj5j"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_7mw2r"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_np1us"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_jc34e"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_k8h6o"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_gw1y2"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="Resource" id="Resource_5gis3"]
+resource_local_to_scene = true
+script = ExtResource("6_ehywe")
+Name = "Apple"
+UniqueName = "item:apple"
+Type = 0
+Value = 10000
+Description = "The apple gleams with a vibrant red hue, its smooth skin promising a crisp, juicy bite. Its firm shape fits perfectly in the palm, and as you bite into it, a burst of tangy-sweet flavor balances the subtle tartness with natural sugars, making each bite refreshing and satisfying."
+Icon = ExtResource("6_w3jy4")
+Sprite = ExtResource("6_w3jy4")
+Stackable = true
+
+[sub_resource type="LabelSettings" id="LabelSettings_rusr7"]
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpnfh"]
+atlas = ExtResource("3_5klxs")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ub185"]
+load_path = "res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkhci"]
+atlas = SubResource("CompressedTexture2D_ub185")
+region = Rect2(112, 32, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a253b"]
+load_path = "res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_voowc"]
+atlas = SubResource("CompressedTexture2D_a253b")
+region = Rect2(176, 32, 16, 16)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_36sp7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7c6lm"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3foco"]
+load_path = "res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nonmw"]
+atlas = SubResource("CompressedTexture2D_3foco")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i4xb2"]
+load_path = "res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewr14"]
+atlas = SubResource("CompressedTexture2D_i4xb2")
+region = Rect2(96, 32, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_okm42"]
+load_path = "res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dah48"]
+atlas = SubResource("CompressedTexture2D_okm42")
+region = Rect2(160, 32, 16, 16)
+
+[node name="Crafting" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xer77")
+
+[node name="ResourcePreloader" type="ResourcePreloader" parent="."]
+resources = [PackedStringArray("slot"), [ExtResource("1_i0y0q")]]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Header" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="CloseButton" type="TextureButton" parent="MarginContainer/VBoxContainer/Header"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = SubResource("AtlasTexture_pp7ig")
+texture_pressed = SubResource("AtlasTexture_nbd0s")
+texture_disabled = SubResource("AtlasTexture_j15wf")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_li2ry")
+region_rect = Rect2(0, 0, 32, 32)
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_xbes8")
+horizontal_scroll_mode = 3
+
+[node name="SlotsContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 13
+
+[node name="Slot" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+IsSelected = true
+
+[node name="Slot2" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_4eku8")
+
+[node name="Slot3" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot4" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_aah1g")
+
+[node name="Slot5" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot6" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_uv0ek")
+
+[node name="Slot7" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot8" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot9" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot10" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_lorp2")
+
+[node name="Slot11" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot12" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_two30")
+
+[node name="Slot13" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot14" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_pnrwh")
+
+[node name="Slot15" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot16" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_f6xe3")
+
+[node name="Slot17" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot18" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_dypkc")
+
+[node name="Slot19" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot20" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_s6h2p")
+
+[node name="Slot21" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot22" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_ydq74")
+
+[node name="Slot23" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot24" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_f3m4h")
+
+[node name="Slot25" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot26" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_3c7ah")
+
+[node name="Slot27" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot28" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_j4np4")
+
+[node name="Slot29" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot30" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_5odoy")
+
+[node name="Slot31" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot32" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_bolfs")
+
+[node name="Slot33" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot34" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_gwmkn")
+
+[node name="Slot35" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot36" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_w30wr")
+
+[node name="Slot37" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot38" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_35kul")
+
+[node name="Slot39" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot40" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_n0k12")
+
+[node name="Slot41" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot42" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_adb4j")
+
+[node name="Slot43" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot44" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_vlj5j")
+
+[node name="Slot45" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot46" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_7mw2r")
+
+[node name="Slot47" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot48" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_np1us")
+
+[node name="Slot49" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot50" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_jc34e")
+
+[node name="Slot51" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot52" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_k8h6o")
+
+[node name="Slot53" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_gw1y2")
+
+[node name="Slot54" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+
+[node name="Slot55" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/ScrollContainer/SlotsContainer" instance=ExtResource("1_i0y0q")]
+layout_mode = 2
+Item = SubResource("Resource_5gis3")
+
+[node name="Details" type="NinePatchRect" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+texture = ExtResource("5_li2ry")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SelectedItemIcon" type="TextureRect" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer/CenterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("6_w3jy4")
+
+[node name="SelectedItemDetails" type="VBoxContainer" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 125)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer/SelectedItemDetails"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="SelectedItemName" type="Label" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer/SelectedItemDetails/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_xbes8")
+theme_override_font_sizes/font_size = 24
+text = "Item Name"
+label_settings = SubResource("LabelSettings_rusr7")
+
+[node name="SelectedItemType" type="Label" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer/SelectedItemDetails/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_xbes8")
+theme_override_font_sizes/font_size = 8
+text = "Item Type"
+
+[node name="SelectedItemDescription" type="RichTextLabel" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer/SelectedItemDetails"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_xbes8")
+theme_override_font_sizes/normal_font_size = 8
+text = "Ingredient x1
+Another Ingredient x3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet urna magna. Pellentesque fermentum consectetur nisi, quis bibendum enim fringilla non. Nunc posuere nec lorem in iaculis."
+
+[node name="QuantityControl" type="HBoxContainer" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="DecreaseButton" type="TextureButton" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer/QuantityControl"]
+unique_name_in_owner = true
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_jpnfh")
+texture_pressed = SubResource("AtlasTexture_fkhci")
+texture_disabled = SubResource("AtlasTexture_voowc")
+
+[node name="Quantity" type="LineEdit" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer/QuantityControl"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_xbes8")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 8
+theme_override_styles/focus = SubResource("StyleBoxEmpty_36sp7")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7c6lm")
+text = "0"
+placeholder_text = "Quantity"
+alignment = 1
+expand_to_text_length = true
+
+[node name="IncreaseButton" type="TextureButton" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer/VBoxContainer/QuantityControl"]
+unique_name_in_owner = true
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_nonmw")
+texture_pressed = SubResource("AtlasTexture_ewr14")
+texture_disabled = SubResource("AtlasTexture_dah48")
+
+[node name="CraftButton" type="Button" parent="MarginContainer/VBoxContainer/NinePatchRect/MarginContainer/HBoxContainer/Details/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 8
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_xbes8")
+text = "Craft"
